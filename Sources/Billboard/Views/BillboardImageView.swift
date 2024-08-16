@@ -24,7 +24,7 @@ struct BillboardImageView : View {
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(maxWidth: 640)
+                    .frame(maxWidth: UIScreen.main.bounds.width)
                     .padding()
                     .accessibilityLabel(Text(advert.name))
                     .accessibilityAddTraits(.isImage)
@@ -44,7 +44,7 @@ struct BillboardImageView : View {
         Rectangle()
             .fill(advert.background)
             .aspectRatio(1.0, contentMode: .fill)
-            .frame(maxWidth: 640)
+            .frame(maxWidth: UIScreen.main.bounds.width)
     }
 }
 

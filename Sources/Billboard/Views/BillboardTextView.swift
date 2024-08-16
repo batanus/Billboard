@@ -23,7 +23,7 @@ struct BillboardTextView : View {
         }
         .multilineTextAlignment(.center)
         .foregroundColor(advert.text)
-        .frame(maxWidth: 640)
+        .frame(maxWidth: UIScreen.main.bounds.width)
         .padding(.horizontal, 24)
         .padding(.bottom, 64)
     }
