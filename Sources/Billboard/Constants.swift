@@ -12,7 +12,7 @@ public enum Constants {
             case .aniChat:
 """
       {
-        "appStoreID" : "6446125657",
+        "appStoreID" : "6593709753",
         "name" : "AniChat",
         "title": "AniChat - Chat with Anime Characters",
         "description" : "Connect with your favorite Anime Characters and dive into endless fun. Start chatting and exploring new stories today!",
@@ -27,7 +27,7 @@ public enum Constants {
             case .gpchat:
 """
       {
-        "appStoreID" : "6593709753",
+        "appStoreID" : "6446125657",
         "name" : "GPChat",
         "title": "GPChat",
         "description" : "Bring the world of anime to your fingertips. Dive into engaging conversations with beloved characters and discover endless entertainment at your command!",
