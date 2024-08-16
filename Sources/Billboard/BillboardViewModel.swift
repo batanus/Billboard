@@ -139,6 +139,14 @@ extension BillboardViewModel {
         }
     }
 
+    /// Caches ads images
+    public static func prepareInternalAppAds() {
+        Constants.Apps.allCases.forEach { app in
+            guard let data = app.data else { return }
+            BillboardViewModel.prepareAd(from: data)
+        }
+    }
+
     private static func generateAd(from data: Data) -> BillboardAd? {
         do {
             let decoder = JSONDecoder()
