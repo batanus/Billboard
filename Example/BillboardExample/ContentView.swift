@@ -83,20 +83,8 @@ struct ContentView: View {
                 showRandomAdvert = !newValue
             }
         }
-        .showBillboard(when: $showRandomAdvert) {
-            // Replace this view with your Paywall
-            VStack {
-                Text("Your Paywall goes here")
-                Button {
-                    premium.buyPremium()
-                } label: {
-                    Text("Fake purchase premium")
-                }
-                .buttonStyle(.borderedProminent)
-            }
-        }
         .fullScreenCover(item: $adtoshow) { advert in
-            BillboardView(advert: advert, config: config, paywall: { Text("Paywall!") })
+            BillboardView(advert: advert, config: config, paywallDidTap: { print("Paywall did tap") })
         }
         .task {
             self.allAds = BillboardViewModel.getInternalAppAds(for: Constants.Apps.allCases)
