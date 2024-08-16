@@ -128,6 +128,46 @@ public final class BillboardViewModel : ObservableObject {
         
         return []
     }
-    
-    
+}
+
+extension BillboardViewModel {
+    public static func getInternalAppAds(for apps: [Constants.Apps]) -> [BillboardAd] {
+        apps.compactMap { app in
+            guard let data = app.data else { return nil }
+            BillboardViewModel.prepareAd(from: data)
+            return BillboardViewModel.generateAd(from: data)
+        }
+    }
+
+    private static func generateAd(from data: Data) -> BillboardAd? {
+        do {
+            let decoder = JSONDecoder()
+            let advert = try decoder.decode(BillboardAd.self, from: data)
+            return advert
+        } catch DecodingError.keyNotFound(let key, let context) {
+            Logger.billboard.error("❌ Failed to decode Billboard Ad due to missing key '\(key.stringValue)' not found – \(context.debugDescription)")
+            return nil
+        } catch DecodingError.typeMismatch(_, let context) {
+            Logger.billboard.error("❌ Failed to decode Billboard Ad due to type mismatch – \(context.debugDescription)")
+            return nil
+        } catch DecodingError.valueNotFound(let type, let context) {
+            Logger.billboard.error("❌ Failed to decode Billboard Ad due to missing \(type) value – \(context.debugDescription)")
+            return nil
+        } catch DecodingError.dataCorrupted(_) {
+            Logger.billboard.error("❌ Failed to decode Billboard Ad because it appears to be invalid JSON")
+            return nil
+        } catch {
+            Logger.billboard.error("❌ Failed to decode Billboard Ad: \(error.localizedDescription)")
+            return nil
+        }
+    }
+
+    private static func prepareAd(from data: Data) {
+        guard let advert = BillboardViewModel.generateAd(from: data) else { return }
+
+        Task {
+            let mediaUrl = advert.media.absoluteString
+            await CachedImageManager().load(mediaUrl, cache: .shared)
+        }
+    }
 }

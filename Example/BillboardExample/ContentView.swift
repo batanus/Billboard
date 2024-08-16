@@ -99,10 +99,7 @@ struct ContentView: View {
             BillboardView(advert: advert, config: config, paywall: { Text("Paywall!") })
         }
         .task {
-            
-            if let allAds = try? await BillboardViewModel.fetchAllAds(from: config.adsJSONURL!) {
-                self.allAds = allAds
-            }
+            self.allAds = BillboardViewModel.getInternalAppAds(for: Constants.Apps.allCases)
         }
     }
         
