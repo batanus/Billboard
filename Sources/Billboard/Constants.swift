@@ -6,6 +6,7 @@ public enum Constants {
         case gpchat
         case imagify
         case bible
+        case audioAI
 
         var jsonData: String {
             switch self {
@@ -63,6 +64,21 @@ public enum Constants {
         "description" : "Get insights from our AI assistant, listen to Audio Bible in any language, and find parallel verses effortlessly - all in one convenient app",
         "media": "https://www.dropbox.com/scl/fi/c9m74ialtred12uqucrop/Bible.png?rlkey=5l32ins33ywjkc5rfbncbson2&st=vrwllv69&dl=1",
         "backgroundColor" : "2A3E47",
+        "textColor" : "ffffff",
+        "tintColor" : "ffffff",
+        "fullscreen": false,
+        "transparent": false
+      }
+"""
+            case .audioAI:
+"""
+      {
+        "appStoreID" : "6739494607",
+        "name" : "AudioAI",
+        "title": "AudioAI - TTS & Isolate Voice",
+        "description" : "Turn your text into lifelike speech with a vast library of unique voices. Isolate voices from audio or video files for crystal-clear sound. Perfect for creators and professionals looking to elevate their projects. Start your journey with AudioAI today!",
+        "media": "https://www.dropbox.com/scl/fi/4j2nced7g8p5o49wocuja/AudioAI-ad.png?rlkey=25h0fvp4bp85s47bp15runla4&st=2e9eptik&dl=1",
+        "backgroundColor" : "012F2A",
         "textColor" : "ffffff",
         "tintColor" : "ffffff",
         "fullscreen": false,
