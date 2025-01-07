@@ -50,11 +50,11 @@ public enum Constants {
 
         public var image: UIImage? {
             switch self {
-            case .gpchat: UIImage(named: "gpchat")
-            case .imagify: UIImage(named: "imagify")
-            case .aniChat: UIImage(named: "aniChat")
-            case .bible: UIImage(named: "bible")
-            case .audioAI: UIImage(named: "audioAI")
+            case .gpchat: UIImage(named: "gpchat", in: Bundle.module, compatibleWith: nil)
+            case .imagify: UIImage(named: "imagify", in: Bundle.module, compatibleWith: nil)
+            case .aniChat: UIImage(named: "aniChat", in: Bundle.module, compatibleWith: nil)
+            case .bible: UIImage(named: "bible", in: Bundle.module, compatibleWith: nil)
+            case .audioAI: UIImage(named: "audioAI", in: Bundle.module, compatibleWith: nil)
             }
         }
 
