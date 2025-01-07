@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 public enum Constants {
     public enum Apps: CaseIterable {
@@ -7,6 +7,56 @@ public enum Constants {
         case imagify
         case bible
         case audioAI
+
+        public var title: String {
+            switch self {
+            case .gpchat: "GPChat"
+            case .imagify: "Imagify"
+            case .aniChat: "AniChat"
+            case .bible: "Educational Bible"
+            case .audioAI: "AudioAI"
+            }
+        }
+
+        public var deeplink: URL {
+            switch self {
+            case .gpchat: URL(string: "gpchat://")!
+            case .imagify: URL(string: "imagify://")!
+            case .aniChat: URL(string: "anichat://")!
+            case .bible: URL(string: "edu-bible://")!
+            case .audioAI: URL(string: "audioai://")!
+            }
+        }
+
+        public var appStoreURL: URL {
+            switch self {
+            case .gpchat: URL(string: "https://apps.apple.com/app/id6446125657")!
+            case .imagify: URL(string: "https://apps.apple.com/app/id6452471030")!
+            case .aniChat: URL(string: "https://apps.apple.com/app/id6593709753")!
+            case .bible: URL(string: "https://apps.apple.com/app/id1549208671")!
+            case .audioAI: URL(string: "https://apps.apple.com/app/id6739494607")!
+            }
+        }
+
+        public var descriptionKey: String {
+            switch self {
+            case .gpchat: "advancedChatGPTBot"
+            case .imagify: "generateImagesWithAI"
+            case .aniChat: "chatWithAnimeCharacters"
+            case .bible: "advancedEducationalBible"
+            case .audioAI: "audioAI"
+            }
+        }
+
+        public var image: UIImage? {
+            switch self {
+            case .gpchat: UIImage(named: "gpchat")
+            case .imagify: UIImage(named: "imagify")
+            case .aniChat: UIImage(named: "aniChat")
+            case .bible: UIImage(named: "bible")
+            case .audioAI: UIImage(named: "audioAI")
+            }
+        }
 
         var jsonData: String {
             switch self {
