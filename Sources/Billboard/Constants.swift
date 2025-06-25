@@ -1,13 +1,15 @@
 import UIKit
 
 public enum Constants {
-    public enum Apps: CaseIterable {
+    public enum Apps: String, CaseIterable, Identifiable {
         case aniChat
         case gpchat
         case imagify
         case bible
         case audioAI
         case mealMind
+
+        public var id: String { rawValue }
 
         public var title: String {
             switch self {
