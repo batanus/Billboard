@@ -53,6 +53,6 @@ struct FullScreenAdView : View {
 
 struct FullScreenAdView_Previews: PreviewProvider {
     static var previews: some View {
-        FullScreenAdView(advert: BillboardSamples.sampleFullScreenAd)
+        FullScreenAdView(advert: BillboardViewModel.generateAd(from: Constants.Apps.gpchat.data!)!)
     }
 }

@@ -147,7 +147,7 @@ extension BillboardViewModel {
         }
     }
 
-    private static func generateAd(from data: Data) -> BillboardAd? {
+    static func generateAd(from data: Data) -> BillboardAd? {
         do {
             let decoder = JSONDecoder()
             let advert = try decoder.decode(BillboardAd.self, from: data)

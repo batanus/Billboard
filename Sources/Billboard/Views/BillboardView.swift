@@ -171,3 +171,9 @@ public struct BillboardView: View {
     
 }
 
+#Preview {
+    BillboardView(
+        advert: BillboardViewModel.getInternalAppAds(for: [.gpchat]).first!,
+        paywallDidTap: { }
+    )
+}

@@ -77,6 +77,7 @@ struct DefaultAdView : View {
 
 struct DefaultAdView_Previews: PreviewProvider {
     static var previews: some View {
+        
         DefaultAdView(advert: BillboardSamples.sampleDefaultAd)
     }
 }

@@ -7,6 +7,7 @@ public enum Constants {
         case imagify
         case bible
         case audioAI
+        case mealMind
 
         public var title: String {
             switch self {
@@ -15,6 +16,7 @@ public enum Constants {
             case .aniChat: "AniChat"
             case .bible: "Educational Bible"
             case .audioAI: "AudioAI"
+            case .mealMind: "MealMind"
             }
         }
 
@@ -25,6 +27,7 @@ public enum Constants {
             case .aniChat: URL(string: "anichat://")!
             case .bible: URL(string: "edu-bible://")!
             case .audioAI: URL(string: "audioai://")!
+            case .mealMind: URL(string: "mealMind://")!
             }
         }
 
@@ -35,6 +38,7 @@ public enum Constants {
             case .aniChat: URL(string: "https://apps.apple.com/app/id6593709753")!
             case .bible: URL(string: "https://apps.apple.com/app/id1549208671")!
             case .audioAI: URL(string: "https://apps.apple.com/app/id6739494607")!
+            case .mealMind: URL(string: "https://apps.apple.com/app/id6747687541")!
             }
         }
 
@@ -45,6 +49,7 @@ public enum Constants {
             case .aniChat: "chatWithAnimeCharacters"
             case .bible: "advancedEducationalBible"
             case .audioAI: "audioAI"
+            case .mealMind: "mealMindDescription"
             }
         }
 
@@ -55,6 +60,7 @@ public enum Constants {
             case .aniChat: UIImage(named: "aniChat", in: Bundle.module, compatibleWith: nil)
             case .bible: UIImage(named: "bible", in: Bundle.module, compatibleWith: nil)
             case .audioAI: UIImage(named: "audioAI", in: Bundle.module, compatibleWith: nil)
+            case .mealMind: UIImage(named: "mealMind", in: Bundle.module, compatibleWith: nil)
             }
         }
 
@@ -79,9 +85,9 @@ public enum Constants {
 """
       {
         "appStoreID" : "6446125657",
-        "name" : "GPChat",
-        "title": "GPChat - GPT-4o powered AI Chatbot",
-        "description" : "Enjoy real-time text and audio chats with GPChat, powered by GPT-4o. Dive into conversations with AI characters for a unique experience!",
+        "name" : "Xenova",
+        "title": "Xenova - GPT-4o powered AI Chatbot",
+        "description" : "Enjoy real-time text and audio chats with Xenova, powered by GPT-4o, Gemini, Grok, DeepSeek and other top AI models!",
         "media": "https://www.dropbox.com/scl/fi/r1t8jayhlglo4npkmir07/GPChat-ad.png?rlkey=mig35imzpta083kk32ovvz91b&st=ft24q02k&dl=1",
         "backgroundColor" : "263B3C",
         "textColor" : "ffffff",
@@ -129,6 +135,21 @@ public enum Constants {
         "description" : "Turn your text into lifelike speech with a vast library of unique voices. Isolate voices from audio or video files for crystal-clear sound. Perfect for creators and professionals looking to elevate their projects. Start your journey with AudioAI today!",
         "media": "https://www.dropbox.com/scl/fi/4j2nced7g8p5o49wocuja/AudioAI-ad.png?rlkey=25h0fvp4bp85s47bp15runla4&st=2e9eptik&dl=1",
         "backgroundColor" : "012F2A",
+        "textColor" : "ffffff",
+        "tintColor" : "ffffff",
+        "fullscreen": false,
+        "transparent": false
+      }
+"""
+            case .mealMind:
+"""
+      {
+        "appStoreID" : "6747687541",
+        "name" : "MealMind",
+        "title": "MealMind - AI Meal Planner & Recipe Creator",
+        "description" : "Create smart, personalized meal plans and recipes with AI. Tailored to your diet, allergies, and ingredients.",
+        "media": "https://www.dropbox.com/scl/fi/6grawtglxdoqkrs1zt6vi/MealMind-1.png?rlkey=aj6mxewws4mmmbqjefyfrfcn5&st=86jdxgee&dl=1",
+        "backgroundColor" : "00251d",
         "textColor" : "ffffff",
         "tintColor" : "ffffff",
         "fullscreen": false,
