@@ -173,7 +173,7 @@ public struct BillboardView: View {
 
 #Preview {
     BillboardView(
-        advert: BillboardViewModel.getInternalAppAds(for: [.xenova]).first!,
+        advert: BillboardViewModel.getInternalAppAds(for: [.clipster]).first!,
         paywallDidTap: { }
     )
 }

@@ -8,6 +8,7 @@ public enum Constants {
         case bible
         case audioAI
         case mealMind
+        case clipster
 
         public var id: String { rawValue }
 
@@ -19,6 +20,7 @@ public enum Constants {
             case .bible: "Educational Bible"
             case .audioAI: "AudioAI"
             case .mealMind: "MealMind"
+            case .clipster: "Clipster"
             }
         }
 
@@ -30,6 +32,7 @@ public enum Constants {
             case .bible: URL(string: "edu-bible://")!
             case .audioAI: URL(string: "audioai://")!
             case .mealMind: URL(string: "mealMind://")!
+            case .clipster: URL(string: "clipster://")!
             }
         }
 
@@ -41,6 +44,7 @@ public enum Constants {
             case .bible: URL(string: "https://apps.apple.com/app/id1549208671")!
             case .audioAI: URL(string: "https://apps.apple.com/app/id6739494607")!
             case .mealMind: URL(string: "https://apps.apple.com/app/id6747687541")!
+            case .clipster: URL(string: "https://apps.apple.com/app/id6744024620")!
             }
         }
 
@@ -52,6 +56,7 @@ public enum Constants {
             case .bible: "advancedEducationalBible"
             case .audioAI: "audioAI"
             case .mealMind: "mealMindDescription"
+            case .clipster: "clipsterDescription"
             }
         }
 
@@ -63,6 +68,7 @@ public enum Constants {
             case .bible: UIImage(named: "bible", in: Bundle.module, compatibleWith: nil)
             case .audioAI: UIImage(named: "audioAI", in: Bundle.module, compatibleWith: nil)
             case .mealMind: UIImage(named: "mealMind", in: Bundle.module, compatibleWith: nil)
+            case .clipster: UIImage(named: "clipster", in: Bundle.module, compatibleWith: nil)
             }
         }
 
@@ -152,6 +158,21 @@ public enum Constants {
         "description" : "Create smart, personalized meal plans and recipes with AI. Tailored to your diet, allergies, and ingredients.",
         "media": "https://www.dropbox.com/scl/fi/6grawtglxdoqkrs1zt6vi/MealMind-1.png?rlkey=aj6mxewws4mmmbqjefyfrfcn5&st=86jdxgee&dl=1",
         "backgroundColor" : "00251d",
+        "textColor" : "ffffff",
+        "tintColor" : "ffffff",
+        "fullscreen": false,
+        "transparent": false
+      }
+"""
+            case .clipster:
+"""
+      {
+        "appStoreID" : "6744024620",
+        "name" : "Clipster",
+        "title": "Clipster - Advanced Clipboard Manager",
+        "description" : "Save, organize, and instantly reuse your copied text. Clipster makes your clipboard smarter, faster, and more powerful.",
+        "media": "https://www.dropbox.com/scl/fi/sixtxdx43ch4p14w9y0mx/Clipster-1.png?rlkey=yi0svgu6dcxpjw0dkusp909yk&st=633c3u31&dl=1",
+        "backgroundColor" : "5856D6",
         "textColor" : "ffffff",
         "tintColor" : "ffffff",
         "fullscreen": false,
