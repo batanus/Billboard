@@ -2,8 +2,8 @@ import UIKit
 
 public enum Constants {
     public enum Apps: String, CaseIterable, Identifiable {
+        case xenova
         case aniChat
-        case gpchat
         case imagify
         case bible
         case audioAI
@@ -13,7 +13,7 @@ public enum Constants {
 
         public var title: String {
             switch self {
-            case .gpchat: "GPChat"
+            case .xenova: "Xenova"
             case .imagify: "Imagify"
             case .aniChat: "AniChat"
             case .bible: "Educational Bible"
@@ -24,7 +24,7 @@ public enum Constants {
 
         public var deeplink: URL {
             switch self {
-            case .gpchat: URL(string: "gpchat://")!
+            case .xenova: URL(string: "gpchat://")!
             case .imagify: URL(string: "imagify://")!
             case .aniChat: URL(string: "anichat://")!
             case .bible: URL(string: "edu-bible://")!
@@ -35,7 +35,7 @@ public enum Constants {
 
         public var appStoreURL: URL {
             switch self {
-            case .gpchat: URL(string: "https://apps.apple.com/app/id6446125657")!
+            case .xenova: URL(string: "https://apps.apple.com/app/id6446125657")!
             case .imagify: URL(string: "https://apps.apple.com/app/id6452471030")!
             case .aniChat: URL(string: "https://apps.apple.com/app/id6593709753")!
             case .bible: URL(string: "https://apps.apple.com/app/id1549208671")!
@@ -46,7 +46,7 @@ public enum Constants {
 
         public var descriptionKey: String {
             switch self {
-            case .gpchat: "advancedChatGPTBot"
+            case .xenova: "advancedChatGPTBot"
             case .imagify: "generateImagesWithAI"
             case .aniChat: "chatWithAnimeCharacters"
             case .bible: "advancedEducationalBible"
@@ -57,7 +57,7 @@ public enum Constants {
 
         public var image: UIImage? {
             switch self {
-            case .gpchat: UIImage(named: "gpchat", in: Bundle.module, compatibleWith: nil)
+            case .xenova: UIImage(named: "xenova", in: Bundle.module, compatibleWith: nil)
             case .imagify: UIImage(named: "imagify", in: Bundle.module, compatibleWith: nil)
             case .aniChat: UIImage(named: "aniChat", in: Bundle.module, compatibleWith: nil)
             case .bible: UIImage(named: "bible", in: Bundle.module, compatibleWith: nil)
@@ -83,7 +83,7 @@ public enum Constants {
         "transparent": false
       }
 """
-            case .gpchat:
+            case .xenova:
 """
       {
         "appStoreID" : "6446125657",
