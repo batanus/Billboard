@@ -94,9 +94,9 @@ public enum Constants {
       {
         "appStoreID" : "6446125657",
         "name" : "Xenova",
-        "title": "Xenova - GPT-4o powered AI Chatbot",
-        "description" : "Enjoy real-time text and audio chats with Xenova, powered by GPT-4o, Gemini, Grok, DeepSeek and other top AI models!",
-        "media": "https://www.dropbox.com/scl/fi/r1t8jayhlglo4npkmir07/GPChat-ad.png?rlkey=mig35imzpta083kk32ovvz91b&st=ft24q02k&dl=1",
+        "title": "Xenova - GPT-5 powered AI Chatbot",
+        "description" : "Enjoy real-time text and audio chats with Xenova, powered by GPT-5, Gemini, Claude, Grok, DeepSeek and other top AI models!",
+        "media": "https://www.dropbox.com/scl/fi/67ljagga4itiqnlj4afgx/Xenova.png?rlkey=r2knho62gwmyg31qikl2v2p0m&st=jezeb1t3&dl=1",
         "backgroundColor" : "263B3C",
         "textColor" : "ffffff",
         "tintColor" : "ffffff",
