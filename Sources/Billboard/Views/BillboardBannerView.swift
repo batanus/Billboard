@@ -30,12 +30,10 @@ public struct BillboardBannerView : View {
         
         ZStack(alignment: .trailing) {
             Button {
-                if let url = advert.appStoreLink {
-                    let storeViewController = SKStoreProductViewController()
-                    storeViewController.loadProduct(withParameters: [SKStoreProductParameterITunesItemIdentifier : advert.appStoreID])
-                    UIViewController.topMostViewController?.present(storeViewController, animated: true)
-                    canDismiss = true
-                }
+                let storeViewController = SKStoreProductViewController()
+                storeViewController.loadProduct(withParameters: [SKStoreProductParameterITunesItemIdentifier : advert.appStoreID])
+                UIViewController.topMostViewController?.present(storeViewController, animated: true)
+                canDismiss = true
             } label: {
                 HStack(spacing: 10) {
                     if let appIcon {

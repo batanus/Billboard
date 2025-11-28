@@ -3,6 +3,7 @@ import UIKit
 public enum Constants {
     public enum Apps: String, CaseIterable, Identifiable {
         case xenova
+        case oneClip
         case aniChat
         case imagify
         case bible
@@ -15,6 +16,7 @@ public enum Constants {
         public var title: String {
             switch self {
             case .xenova: "Xenova"
+            case .oneClip: "OneClip"
             case .imagify: "Imagify"
             case .aniChat: "AniChat"
             case .bible: "Educational Bible"
@@ -27,6 +29,7 @@ public enum Constants {
         public var deeplink: URL {
             switch self {
             case .xenova: URL(string: "gpchat://")!
+            case .oneClip: URL(string: "oneclip://")!
             case .imagify: URL(string: "imagify://")!
             case .aniChat: URL(string: "anichat://")!
             case .bible: URL(string: "edu-bible://")!
@@ -39,6 +42,7 @@ public enum Constants {
         public var appStoreURL: URL {
             switch self {
             case .xenova: URL(string: "https://apps.apple.com/app/id6446125657")!
+            case .oneClip: URL(string: "https://apps.apple.com/app/id6755240189")!
             case .imagify: URL(string: "https://apps.apple.com/app/id6452471030")!
             case .aniChat: URL(string: "https://apps.apple.com/app/id6593709753")!
             case .bible: URL(string: "https://apps.apple.com/app/id1549208671")!
@@ -51,6 +55,7 @@ public enum Constants {
         public var descriptionKey: String {
             switch self {
             case .xenova: "advancedChatGPTBot"
+            case .oneClip: "aiAutoVideoMaker"
             case .imagify: "generateImagesWithAI"
             case .aniChat: "chatWithAnimeCharacters"
             case .bible: "advancedEducationalBible"
@@ -63,6 +68,7 @@ public enum Constants {
         public var image: UIImage? {
             switch self {
             case .xenova: UIImage(named: "xenova", in: Bundle.module, compatibleWith: nil)
+            case .oneClip: UIImage(named: "oneClip", in: Bundle.module, compatibleWith: nil)
             case .imagify: UIImage(named: "imagify", in: Bundle.module, compatibleWith: nil)
             case .aniChat: UIImage(named: "aniChat", in: Bundle.module, compatibleWith: nil)
             case .bible: UIImage(named: "bible", in: Bundle.module, compatibleWith: nil)
@@ -173,6 +179,21 @@ public enum Constants {
         "description" : "Save, organize, and instantly reuse your copied text. Clipster makes your clipboard smarter, faster, and more powerful.",
         "media": "https://www.dropbox.com/scl/fi/sixtxdx43ch4p14w9y0mx/Clipster-1.png?rlkey=yi0svgu6dcxpjw0dkusp909yk&st=633c3u31&dl=1",
         "backgroundColor" : "5856D6",
+        "textColor" : "ffffff",
+        "tintColor" : "ffffff",
+        "fullscreen": false,
+        "transparent": false
+      }
+"""
+            case .oneClip:
+"""
+      {
+        "appStoreID" : "6755240189",
+        "name" : "OneClip",
+        "title": "OneClip - AI Auto Video Maker",
+        "description" : "Generate stunning videos effortlessly with OneClip's AI-powered tools. Transform your ideas into captivating videos in minutes. Perfect for creators of all levels!",
+        "media": "https://www.dropbox.com/scl/fi/kgp2u17yribx2xgtwsjyd/OneClip-1.png?rlkey=3bpkgk9jhjapvbpum5uk3x131&st=k5n109qi&dl=1",
+        "backgroundColor" : "0F766D",
         "textColor" : "ffffff",
         "tintColor" : "ffffff",
         "fullscreen": false,
