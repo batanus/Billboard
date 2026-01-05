@@ -1,0 +1,10 @@
+strings:
+  inputs:
+    - Sources/Billboard/Resources/en.lproj
+  outputs:
+    - templatePath: Templates/SwiftGen/strings.stencil
+      output: Sources/Billboard/Loc+Generated.swift
+      params:
+        enumName: Loc
+        publicAccess: true
+        bundle: Bundle.module

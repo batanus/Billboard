@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "Billboard",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v15)
     ],
@@ -17,7 +18,7 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "Billboard",
-            resources: [.process("Assets.xcassets")]
+            resources: [.process("Assets.xcassets"), .process("Resources")]
         ),
         .testTarget(
             name: "BillboardTests",

@@ -54,14 +54,14 @@ public enum Constants {
 
         public var descriptionKey: String {
             switch self {
-            case .xenova: "advancedChatGPTBot"
-            case .oneClip: "aiAutoVideoMaker"
-            case .imagify: "generateImagesWithAI"
-            case .aniChat: "chatWithAnimeCharacters"
-            case .bible: "advancedEducationalBible"
-            case .audioAI: "audioAI"
-            case .mealMind: "mealMindDescription"
-            case .clipster: "clipsterDescription"
+            case .xenova: Loc.advancedChatGPTBot
+            case .oneClip: Loc.aiAutoVideoMaker
+            case .imagify: Loc.generateImagesWithAI
+            case .aniChat: Loc.chatWithAnimeCharacters
+            case .bible: Loc.advancedEducationalBible
+            case .audioAI: Loc.audioAI
+            case .mealMind: Loc.mealMindDescription
+            case .clipster: Loc.clipsterDescription
             }
         }
 
