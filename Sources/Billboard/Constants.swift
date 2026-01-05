@@ -52,7 +52,7 @@ public enum Constants {
             }
         }
 
-        public var descriptionKey: String {
+        public var description: String {
             switch self {
             case .xenova: Loc.advancedChatGPTBot
             case .oneClip: Loc.aiAutoVideoMaker
