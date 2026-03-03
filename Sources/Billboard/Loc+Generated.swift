@@ -25,6 +25,8 @@ public enum Loc {
   public static let generateImagesWithAI = NSLocalizedString("generateImagesWithAI", bundle: Bundle.module, comment: "")
   /// Smart AI Recipes & Meal Plans – Easy, Personalized, Delicious
   public static let mealMindDescription = NSLocalizedString("mealMindDescription", bundle: Bundle.module, comment: "")
+  /// Record sermons, mark key moments, and get transcript, AI summary, and practical reminders.
+  public static let sermonFlowDescription = NSLocalizedString("sermonFlowDescription", bundle: Bundle.module, comment: "")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

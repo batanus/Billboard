@@ -10,6 +10,7 @@ public enum Constants {
         case audioAI
         case mealMind
         case clipster
+        case sermonFlow
 
         public var id: String { rawValue }
 
@@ -23,6 +24,7 @@ public enum Constants {
             case .audioAI: "AudioAI"
             case .mealMind: "MealMind"
             case .clipster: "Clipster"
+            case .sermonFlow: "SermonFlow"
             }
         }
 
@@ -36,6 +38,7 @@ public enum Constants {
             case .audioAI: URL(string: "audioai://")!
             case .mealMind: URL(string: "mealMind://")!
             case .clipster: URL(string: "clipster://")!
+            case .sermonFlow: URL(string: "sermonflow://")!
             }
         }
 
@@ -49,6 +52,7 @@ public enum Constants {
             case .audioAI: URL(string: "https://apps.apple.com/app/id6739494607")!
             case .mealMind: URL(string: "https://apps.apple.com/app/id6747687541")!
             case .clipster: URL(string: "https://apps.apple.com/app/id6744024620")!
+            case .sermonFlow: URL(string: "https://apps.apple.com/app/id6759283806")!
             }
         }
 
@@ -62,6 +66,7 @@ public enum Constants {
             case .audioAI: Loc.audioAI
             case .mealMind: Loc.mealMindDescription
             case .clipster: Loc.clipsterDescription
+            case .sermonFlow: Loc.sermonFlowDescription
             }
         }
 
@@ -75,6 +80,7 @@ public enum Constants {
             case .audioAI: UIImage(named: "audioAI", in: Bundle.module, compatibleWith: nil)
             case .mealMind: UIImage(named: "mealMind", in: Bundle.module, compatibleWith: nil)
             case .clipster: UIImage(named: "clipster", in: Bundle.module, compatibleWith: nil)
+            case .sermonFlow: UIImage(named: "sermonFlow", in: Bundle.module, compatibleWith: nil)
             }
         }
 
@@ -194,6 +200,21 @@ public enum Constants {
         "description" : "Generate stunning videos effortlessly with OneClip's AI-powered tools. Transform your ideas into captivating videos in minutes. Perfect for creators of all levels!",
         "media": "https://www.dropbox.com/scl/fi/kgp2u17yribx2xgtwsjyd/OneClip-1.png?rlkey=3bpkgk9jhjapvbpum5uk3x131&st=k5n109qi&dl=1",
         "backgroundColor" : "0F766D",
+        "textColor" : "ffffff",
+        "tintColor" : "ffffff",
+        "fullscreen": false,
+        "transparent": false
+      }
+"""
+            case .sermonFlow:
+"""
+      {
+        "appStoreID" : "6759283806",
+        "name" : "SermonFlow",
+        "title": "SermonFlow - AI Bible Note Taker",
+        "description" : "Record sermons, mark key moments, and get transcript, AI summary, and practical reminders.",
+        "media": "https://www.dropbox.com/scl/fi/2g269j4v8eyizy55ssc64/SermonFlow-ad.png?rlkey=mnidf86wftbxfqhl84ke5kzdt&st=ohttsnqz&dl=1",
+        "backgroundColor" : "7E563C",
         "textColor" : "ffffff",
         "tintColor" : "ffffff",
         "fullscreen": false,
